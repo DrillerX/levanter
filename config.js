@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_30c6c27d577ff64819ac3e371c221d7d7f').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -32,13 +32,13 @@ module.exports = {
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'That_boi_Glitch',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
   LOG_MSG: process.env.LOG_MSG || 'false',
   RMBG_KEY: process.env.RMBG_KEY || 'null',
   BAILEYS_LOG_LVL: process.env.BAILEYS_LOG_LVL || 'silent',
   LANG: (process.env.LANGUAG || 'en').toLowerCase(),
-  WARN_LIMIT: process.env.WARN_LIMIT || 3,
+  WARN_LIMIT: process.env.WARN_LIMIT || 5,
   FORCE_LOGOUT: process.env.FORCE_LOGOUT || 'false',
   BRAINSHOP: process.env.BRAINSHOP || '159501,6pq8dPiYt7PdqHz3',
   DISABLE_BOT: process.env.DISABLE_BOT || 'null',
